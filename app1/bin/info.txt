@@ -1,0 +1,2 @@
+1. Basic application CUI and Hibernate Integration.
+2. Use of Schema Export and Schema Update.
