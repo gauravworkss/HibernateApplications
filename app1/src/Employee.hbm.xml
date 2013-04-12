@@ -6,8 +6,7 @@
 <hibernate-mapping>
 	<class name="com.dss.bean.Employee" table="emp3">
 		<id name="eno" column="eno">
-			<generator class="increment"></generator>
-			
+			<generator class="increment"></generator>			
 		</id>
 		<property name="ename" column="ename"/>
 		<property name="esal"  column="esal"/>
