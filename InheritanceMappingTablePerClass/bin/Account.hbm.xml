@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.dss.bean.Account" table="inh_mapping_table_per_class">
+		<id name="accNo"/>
+		<discriminator  column="type"/>
+		<property name="accName"/>
+		<subclass name="com.dss.bean.StudentAccount" discriminator-value="student">
+			<property name="sid"/>
+			<property name="sbranch"/>
+		</subclass>
+		<subclass name="com.dss.bean.EmployeeAccount" discriminator-value="employee">
+			<property name="eid"/>
+			<property name="edept"/>
+		</subclass>
+	</class>
+</hibernate-mapping>

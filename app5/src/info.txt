@@ -1,0 +1,2 @@
+1. Example of Hbn application without using Mapping file 
+and without using Configuration File.

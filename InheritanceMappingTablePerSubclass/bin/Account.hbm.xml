@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.dss.bean.Employee" table="emp_per_subclass">
+		<id name="eid"/>
+		<property name="ename"/>
+		
+		<joined-subclass name="com.dss.bean.Manager" table="manager_per_subclass">
+			<key column="eid"/>
+			<property name="email"/>
+			<property name="addr"/>
+		</joined-subclass>
+		<joined-subclass name="com.dss.bean.Accountant" table="accountant_per_subclass">
+			<key column="eid"/>
+			<property name="esal"/>
+			<property name="equal"/>
+		</joined-subclass>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AssociationManyToManyMapping/src/Branch.hbm.xml&apos; to &apos;Courses.hbm.xml&apos;" description="Rename resource &apos;Branch.hbm.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Branch.hbm.xml" name="Courses.hbm.xml" stamp="1343820434247" updateReferences="true"/>
+</session>

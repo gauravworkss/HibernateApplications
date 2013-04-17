@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.dss.bean.Employee" table="emp_onetoone">
+		<id name="eid"/>
+		<property name="ename"/>
+		<one-to-one name="acc" class="com.dss.bean.Account" cascade="all"/>
+	</class>
+	<class name="com.dss.bean.Account" table="acc_onetoone">
+		<id name="accNo"/>
+		<property name="accName"/>
+	</class>
+	<class name="com.dss.bean.Emp_Acc_Property" table="emp_acc_onetoone">
+	<id name="eid"/>
+	<property name="accNo"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.dss.bean.Product" table="product">
+		<id name="pid" column="pid"/>
+		<property name="pname" column="pname"/>
+		<property name="pcost" column="pcost"/>
+	</class>
+	
+	<!-- use lower part in case of declarative approach -->
+	<!-- <sql-query name="entity_sql_query" callable="true">
+		<return class="com.dss.bean.Product"/>
+		{call display()}
+	</sql-query> -->
+	
+	<!-- use this part as scalar example -->
+	<sql-query name="scalar_sql_query" callable="true">
+		<return-scalar column="pid" type="java.lang.String"/>
+		<return-scalar column="pid" type="java.lang.String"/>
+		<return-scalar column="pname" type="java.lang.String"/>
+		{call display()}
+	</sql-query>
+</hibernate-mapping>    

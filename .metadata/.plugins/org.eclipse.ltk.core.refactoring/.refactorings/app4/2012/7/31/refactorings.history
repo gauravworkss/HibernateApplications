@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;ComponentMapping/src&apos;&#x0D;&#x0A;- Original project: &apos;app4&apos;&#x0D;&#x0A;- Destination element: &apos;ComponentMapping/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     User.hbm.xml&#x0D;&#x0A;     hibernate.cfg.xml" description="Copy files" destination="=ComponentMapping/src" element1="src/User.hbm.xml" element2="src/hibernate.cfg.xml" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1343718650453" units="0" version="1.0"/>
+</session>

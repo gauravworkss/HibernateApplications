@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="com.dss.bean.Students" table="student_manytomany">
+		<id name="sid"/>
+		<property name="sname"/>
+		<set name="course" table="courses_students_manytoone" cascade="all">
+			<key column="sid"></key>
+			<many-to-many column="cid" class="com.dss.bean.Courses"/>
+		</set>
+	</class>	    
+</hibernate-mapping>

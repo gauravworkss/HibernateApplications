@@ -1,0 +1,8 @@
+In this application i have executed program without
+having "Configuration File" and "Mapping File".
+
+Instead of "Configuration File" i have used Configuration 
+class setProperty(name,value) method.
+You can use property file also to provide configuration details.
+
+Instead of mapping file i have used Annotations.

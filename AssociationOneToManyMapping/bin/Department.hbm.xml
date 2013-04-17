@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="com.dss.bean.Department" table="dept_onetomany">
+		<id name="did"/>
+		<property name="dname"/>
+		<set name="emp" table="emp_onetomany" cascade="all">
+			<key column="did"/>
+			<one-to-many class="com.dss.bean.Employee"/>
+		</set>
+	</class>	    
+</hibernate-mapping>

@@ -1,0 +1,2 @@
+The main purpose of Component Mapping is to remove Granularity
+mismatch b\w OOM and RM.
