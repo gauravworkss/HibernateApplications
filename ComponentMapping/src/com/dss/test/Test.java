@@ -36,7 +36,7 @@ public class Test {
 		Transaction tx = s.beginTransaction();
 		s.save(e);
 		tx.commit();
-		System.out.println("Employee Inserted Successsfully");
+		System.out.println("Employee Inserted Successfully");
 		s.close();
 
 	}

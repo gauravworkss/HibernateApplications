@@ -3,7 +3,7 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.dss.bean.Employee" table="emp1">
+	<class name="com.dss.bean.Employee" table="emp3">
 		<id name="eno"/>
 		<property name="ename"/>
 		<property name="esal"/>
